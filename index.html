@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lombok Attractions</title>
+
+    <!-- lombok attractions vaficon -->
+    <link rel="icon" href="assets/LOA-vaf-3.2.png" type="img/icon-x">
+
+    <!-- Main style css -->
+    <link rel="stylesheet" href="css/style-main-mobile.css">
+    <link rel="stylesheet" href="css/main-mobile-scn.css">
+    <link rel="stylesheet" href="css/style-main.css">
+
+    <!-- Font awesome cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+
+    <!-- Font awesome offline -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css" />
+</head>
+
+<body>
+<!-- ------------- Header ------------- -->
+    <header id="header">
+        <div class="header-col-1">
+            <a href="#"> 
+                <img src="assets/LOA-light-v3.2.png" alt="Lombok Attractions">
+            </a>
+
+            <span class="beta">Beta</span>
+
+            <i class="fa-solid fa-ellipsis-vertical" id="ellipsis-btn"></i>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <ul class="nav-item nav-item-active"><i class="fa-solid fa-compass nav-icon nav-icon-active"></i> Attractions</ul>
+                <ul class="nav-item"><i class="fa-solid fa-house nav-icon"></i> Stay</ul>
+                <ul class="nav-item"><i class="fa-solid fa-car nav-icon"></i> Transportations</ul>
+            </ul>
+        </nav>
+        
+    </header>
+
+<!-- ------------- User control ------------- -->
+    <div class="user-controls">
+        <div class="user">
+            <i class="fa-solid fa-x close-user-control"></i>
+
+            <i class="fa-regular fa-pen-to-square"></i>
+            <span class="user-name">Okan</span>
+
+            <div class="profile">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <img src="assets/okan.jpg" alt="okan">
+            </div>
+        </div>
+
+        
+        <div class="toolbar">
+            <span class="lang"><i class="fa-solid fa-language"></i> Language</span>
+            <ul class="lang-list">
+                <li id="eng"><a href="#">English</a></li>
+                <li id="idn"><a href="#">Indonesia</a></li>
+            </ul>
+
+
+            <span class="curency"><i class="fa-solid fa-rupiah-sign"></i> IDR</span>
+            <ul class="curency-list">
+                <li id="rp"><a href=""><i class="fa-solid fa-rupiah-sign"></i> IDR</a></li>
+                <li id="usd"><a href=""><i class="fa-solid fa-dollar-sign"></i> USD</a></li>
+                <li id="ue"><a href=""><i class="fa-solid fa-euro-sign"></i> EURO</a></li>
+            </ul>
+
+            <span class="curency"><i class="fa-solid fa-question"></i>Help Center</span>
+            <ul class="curency-list">
+                <li><a href="">Listing</a></li>
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Joint</a></li>
+            </ul>
+
+            <span class="curency"><i class="fa-solid fa-headset"></i>Customer Service</span>
+            <ul class="curency-list">
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Invoice</a></li>
+                <li><a href="">Payout</a></li>
+                <li><a href="">Listing</a></li>
+                <li><a href="">Contract</a></li>
+                <li><a href="">Other contact</a></li>
+            </ul>
+        </div>        
+    </div>
+
+<!-- ------------- Section 1 Hero ------------- -->
+    <section class="scn scn-1">
+        <h1 class="h1">LET'S FIND THE LOMBOK ATTRACTIONS</h1>
+        
+        <form action="search" class="search-form">
+            <input type="text" placeholder="Search" class="seaarch-field">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </section>
+
+<!-- ------------- Section 2 Offer ------------- -->
+    <section class="scn scn-2">
+        <h3 class="h3">Offer</h3>
+        <p class="p1">Take the ofeertunity with discount 15% off for new attractions</p>
+        
+        <div class="container-a">
+            <div class="sub-container-a">
+                <div class="card-a">
+                    <div class="card-a-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-a-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <p class="p2"><i class="fa-solid fa-location-dot"></i> central Lombok</p>
+                        <ul>                            
+                            <li><i class="fa fa-car"></i> Free tansport <i class="fa fa-check"></i></li>
+                            <li><i class="fa fa-home"></i> Free stay <i class="fas fa-check"></i></li>
+                            <li><i class="fa fa-bowl-food"></i> Free Lunch <i class="fas fa-check"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-a">
+                    <div class="card-a-img">
+                        <img src="assets/sq2.jpg" alt="">
+                    </div>
+                    <div class="card-a-inf">
+                        <h4 class="h4 h4-card-a">Terjun kocet</h4>
+                        <p class="p2"><i class="fa-solid fa-location-dot"></i> central Lombok</p>
+                        <ul>                            
+                            <li><i class="fa fa-car"></i> Free tansport <i class="fa fa-check"></i></li>
+                            <li><i class="fa fa-home"></i> Free stay <i class="fas fa-check"></i></li>
+                            <li><i class="fa fa-bowl-food"></i> Free Lunch <i class="fas fa-check"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-a">
+                    <div class="card-a-img">
+                        <img src="assets/sq3.jpg" alt="">
+                    </div>
+                    <div class="card-a-inf">
+                        <h4 class="h4 h4-card-a">Pantai Pink</h4>
+                        <p class="p2"><i class="fa-solid fa-location-dot"></i> central Lombok</p>
+                        <ul>                            
+                            <li><i class="fa fa-car"></i> Free tansport <i class="fa fa-check"></i></li>
+                            <li><i class="fa fa-home"></i> Free stay <i class="fas fa-check"></i></li>
+                            <li><i class="fa fa-bowl-food"></i> Free Lunch <i class="fas fa-check"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-a1">
+            <i class="fa-solid fa-angle-left" id="left-nav"></i>
+            <i class="fa-solid fa-angle-right" id="right-nav"></i>
+        </div>
+    </section>
+
+<!-- ------------- Section 3 Top Attractions ------------- -->
+    <section class="scn scn-3">
+        <h3 class="h3">Top Lombok Attractions</h3>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis, vero adipisci minus assumenda deleniti.</p>
+
+        <div class="more-a">
+            <a href="#">Lihat semua <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="container-b">
+            <div class="sub-container-b">
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> South Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> West Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> East Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- ------------- Section 4 Tourism village ------------- -->
+    <section class="scn scn-3">
+        <h3 class="h3">Lombok Tourizm Village</h3>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis, vero adipisci minus assumenda deleniti.</p>
+
+        <div class="more-a">
+            <a href="#">Lihat semua <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="container-b">
+            <div class="sub-container-b">
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> South Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> West Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> East Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+<!-- ------------- Section 5 Travel Theme------------- -->
+    <section class="scn scn-3">
+        <h3 class="h3">Travel Theme</h3>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis, vero adipisci minus assumenda deleniti.</p>
+
+        <div class="container-b">
+            <button class="btn btn-active">Natre</button>
+            <button class="btn">City</button>
+            <button class="btn">Culture</button>
+            <button class="btn">Culinry</button>
+        </div>
+
+        <div class="more-a">
+            <a href="#">Lihat semua <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="container-b">
+            <div class="sub-container-b">
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> South Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> West Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> East Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+                <div class="card-b">
+                    <div class="card-b-img">
+                        <img src="assets/sq1.png" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">pantai ijo</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> Central Lombok</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+<!-- ------------- Section 6 Explore more------------- -->
+    <section class="scn scn-3">
+        <h3 class="h3">Explore Lombok</h3>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis, vero adipisci minus assumenda deleniti.</p>
+
+        <div class="more-a">
+            <a href="#">Lihat semua <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="container-c">
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+            <div class="card-c">
+                <div class="card-c-img">
+                    <img src="assets/sq1.png" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">pantai ijo</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> North Lombok</span>
+                </div>
+            </div>
+    </section>
+
+    <section class="nav-bootom">
+        <div class="nav-box">
+            <div class="nav-tite">
+                <h4 class="h4">Contribute</h4>
+            </div>
+            <ul class="nav-bootom-item">
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Partner dispute</a></li>
+                <li><a href="#">Corporate contact</a></li>
+                <li><a href="#">Guidelines and reporting</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </div>
+        <div class="nav-box">
+            <div class="nav-tite">
+                <h4 class="h4">Being member</h4>
+            </div>
+            <ul class="nav-bootom-item">
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">List new Property</a></li>
+                <li><a href="#">List new Landmark</a></li>
+            </ul>
+        </div>
+    </section>
+
+<!-- ------------- Float btn & List - Cart ------------- -->
+    <span class="float-btn cart-btn" id="cart-btn">
+        <i class="fa-solid fa-list-check"></i>
+    </span>
+    
+    <div class="list-cart ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente suscipit dolores ipsa corrupti blanditiis sed a, quibusdam nemo minus, non consequuntur laborum expedita placeat alias voluptas! Velit, enim aliquid?
+    </div>
+<!-- ------------- Footer ------------- -->
+    <div class="footer">
+        <p>Copyright © 2023-<span id="copyRight-year"></span><br />Lombok Attractions. All rights reserved.</p>
+        <ul class="social">
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-pinterest"></i></li>
+          <li><i class="fa-brands fa-x-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+
+    <!-- Main script -->
+    <script src="js/script-main.js"></script>
+</html>
