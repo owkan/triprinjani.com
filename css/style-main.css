@@ -2,12 +2,13 @@
 :root {
   --text: #2d2d2d;
   --org-color: #ff6c01;
-  --primary: #ff9200;
+  /* --primary: #ff9200; */
+  --primary: #252833;
   --secondary: #ffab43;
   --third: #ffd17d;
-  --trn: rgba(0, 0, 0, 0.179);
+  --trn: #25283325;
   --bg: #f2f2f2;
-  --trn-primary: #ff910022;
+  --trn-primary: #25283325;
   --h1-mbl: 1.2em;
   --h3-mbl: 10px;
   --paragraph1-mbl: 0.8em;
