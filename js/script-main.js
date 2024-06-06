@@ -1,4 +1,6 @@
+// -------------------------------------
 // Header
+// -------------------------------------
 // => Show & Hide Header
 let lastScrollTop = 0;
 const header = document.getElementById('header');
@@ -8,7 +10,7 @@ window.addEventListener('scroll', function () {
   if (scrollTop > lastScrollTop) {
     // Scroll ke atas
     if (scrollTop > header.offsetHeight) {
-      header.style.transform = 'translateY(-70px)';
+      header.style.transform = 'translateY(-90px)';
     } else {
       header.style.transform = 'translateY(0)';
     }
@@ -32,79 +34,88 @@ document.querySelector('#ellipsis-btn').addEventListener('click', () => {
 document.querySelector('.close-user-control').addEventListener('click', () => {
   userControl.classList.remove('user-controls-active');
 });
-// -----------------------------------------------------------
 
-// Slider Carousel ---------------------
 // -------------------------------------
-document.addEventListener('DOMContentLoaded', function () {
-  const carousel = document.querySelector('.sub-container-a');
-  const cards = document.querySelectorAll('.card-a');
-  let currentIndex = 0;
-
-  function moveToNextCard() {
-    if (currentIndex < cards.length - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
-    updateCarousel();
-  }
-
-  function moveToPreviousCard() {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = cards.length - 1;
-    }
-    updateCarousel();
-  }
-
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-    const rightNav = document.getElementById('right-nav');
-    const leftNav = document.getElementById('left-nav');
-
-    if (currentIndex === cards.length - 1) {
-      rightNav.style.opacity = '0.5'; // Menurunkan opacity ketika di card terakhir
-      rightNav.style.transition = '0.3s'; // Menurunkan opacity ketika di card terakhir
-    } else {
-      rightNav.style.opacity = '1'; // Mengembalikan opacity normal ketika tidak di card terakhir
-    }
-
-    if (currentIndex === 0) {
-      leftNav.style.opacity = '0.5'; // Menurunkan opacity ketika di card pertama
-      leftNav.style.transition = '0.3s'; // Menurunkan opacity ketika di card pertama
-    } else {
-      leftNav.style.opacity = '1'; // Mengembalikan opacity normal ketika tidak di card pertama
-    }
-  }
-
-  document.getElementById('right-nav').addEventListener('click', function () {
-    moveToNextCard();
-  });
-  document.getElementById('left-nav').addEventListener('click', function () {
-    moveToPreviousCard();
-  });
-});
-
-// Float Button - cart------------------
+// Init apps
 // -------------------------------------
+const offerCardWrapper = document.querySelector('#wrp1');
+const topCardWrapper = document.querySelector('#wrp2');
+const privateTripWrapper = document.querySelector('#wrp3');
+let offerCardWrapperContain = [];
+let topRinjaniProgrames = [];
+let privateProgrames = [];
 
-// const floatButton = document.querySelector('.float-btn.cart-btn');
-// const cartList = document.querySelector('.list-cart');
+const addToOfferCard = () => {
+  if (offerCardWrapperContain.length > 0) {
+    offerCardWrapperContain.forEach((e1) => {
+      let cardA = document.createElement('a');
+      cardA.classList.add('card-a');
+      cardA.setAttribute('href', `${e1.url}`);
+      cardA.innerHTML = `<div class="card-a-img">
+      <img src="${e1.img}" alt="">
+  </div>
+  <div class="card-a-inf">
+      <h4 class="h4 h4-card-a">${e1.titile}</h4>
+      <p class="p2"><i class="fa-solid fa-location-dot"></i> ${e1.location}</p>
+      <ul>                            
+          <li><i class="fa fa-car"></i> ${e1.include1}</li>
+          <li><i class="fa fa-home"></i> ${e1.include2}</li>
+          <li><i class="fa fa-bowl-food"></i> ${e1.include3}</li>
+      </ul>
+      <div class="rate">
+        <span>${e1.stars} ${e1.usd}</span>
+      </div>
+  </div>`;
+      offerCardWrapper.appendChild(cardA);
+    });
+  }
+};
 
-// floatButton.addEventListener('click', (e) => {
-//   cartList.classList.add('list-cart-active');
-//   floatButton.style.right = '120px';
+const addTopProgrames = () => {
+  if (topRinjaniProgrames.length > 0) {
+    topRinjaniProgrames.forEach((e2) => {
+      let cardB = document.createElement('a');
+      cardB.classList.add('card-b');
+      cardB.setAttribute('href', `${e2.url2}`);
+      cardB.innerHTML = `<div class="card-b-img">
+                        <img src="${e2.img2}" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">${e2.name2}</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> ${e2.location2}</span>
+                    </div>
+                    <div class="rate">
+                      <span>${e2.stars2} ${e2.usd2}</span>
+                    </div>`;
+      topCardWrapper.appendChild(cardB);
+    });
+  }
+};
 
-//   if (e.target == floatButton.classList.contains('cart-btn')) {
-//     cartList.classList.remove('list-cart-active');
-//   } else if (!e.target == floatButton.classList.contains('cart-btn')) {
-//   }
-// });
+const initApp1 = (database) => {
+  fetch(database)
+    .then((response) => response.json())
+    .then((dataName) => {
+      offerCardWrapperContain = dataName;
+      console.table(dataName);
+      addToOfferCard();
+    });
+};
+initApp1('./json/offer.json');
 
-// Footer-------------------------------
+const initApp2 = (database) => {
+  fetch(database)
+    .then((response) => response.json())
+    .then((dataName) => {
+      topRinjaniProgrames = dataName;
+      console.table(dataName);
+      addTopProgrames();
+    });
+};
+initApp2('./json/top-rinjani.json');
+
+// -------------------------------------
+// Footer
 // -------------------------------------
 const curentYearCopyright = () => {
   let yearElement = document.getElementById('copyRight-year');

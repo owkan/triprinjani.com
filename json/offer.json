@@ -1,0 +1,62 @@
+[
+  {
+    "url": "#",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
+    "titile": "rinjani 1",
+    "location": "location 1",
+    "include1": "include 1",
+    "include2": "include 2",
+    "include3": "include 3",
+    "usd": "20$",
+    "idr": "IDR 20",
+    "stars": "★★★★☆"
+  },
+  {
+    "url": "#",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
+    "titile": "rinjani 2",
+    "location": "location 2",
+    "include1": "include 1",
+    "include2": "include 2",
+    "include3": "include 3",
+    "usd": "okan",
+    "idr": "IDR 20",
+    "stars": "★★★★☆"
+  },
+  {
+    "url": "#",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
+    "titile": "rinjani 3",
+    "location": "location 3",
+    "include1": "include 1",
+    "include2": "include 2",
+    "include3": "include 3",
+    "usd": "20$",
+    "idr": "IDR 20",
+    "stars": "★★★★☆"
+  },
+  {
+    "url": "#",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
+    "titile": "rinjani 4",
+    "location": "location 4",
+    "include1": "include 1",
+    "include2": "include 2",
+    "include3": "include 3",
+    "usd": "20$",
+    "idr": "IDR 20",
+    "stars": "★★★★☆"
+  },
+  {
+    "url": "#",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
+    "titile": "rinjani 5",
+    "location": "location 5",
+    "include1": "include 1",
+    "include2": "include 2",
+    "include3": "include 3",
+    "usd": "20$",
+    "idr": "IDR 20",
+    "stars": "★★★★☆"
+  }
+]
