@@ -41,9 +41,11 @@ document.querySelector('.close-user-control').addEventListener('click', () => {
 const offerCardWrapper = document.querySelector('#wrp1');
 const topCardWrapper = document.querySelector('#wrp2');
 const privateTripWrapper = document.querySelector('#wrp3');
+const otherTripWrapper = document.querySelector('#wrp4');
 let offerCardWrapperContain = [];
 let topRinjaniProgrames = [];
 let privateProgrames = [];
+let otherProgrames = [];
 
 const addToOfferCard = () => {
   if (offerCardWrapperContain.length > 0) {
@@ -92,6 +94,45 @@ const addTopProgrames = () => {
   }
 };
 
+const addPrivateProgrames = () => {
+  if (privateProgrames.length > 0) {
+    privateProgrames.forEach((e3) => {
+      let cardB = document.createElement('a');
+      cardB.classList.add('card-b');
+      cardB.setAttribute('href', `${e3.url3}`);
+      cardB.innerHTML = `<div class="card-b-img">
+                        <img src="${e3.img3}" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">${e3.name3}</h4>
+                        <span class="span1"><i class="fa-solid fa-location-dot"></i> ${e3.location3}</span>
+                    </div>
+                    <div class="rate">
+                      <span>${e3.stars3} ${e3.usd3}</span>
+                    </div>`;
+      privateTripWrapper.appendChild(cardB);
+    });
+  }
+};
+
+const addOtherProgrames = () => {
+  if (otherProgrames.length > 0) {
+    otherProgrames.forEach((e4) => {
+      let cardC = document.createElement('a');
+      cardC.classList.add('card-c');
+      cardC.setAttribute('href', `${e4.tohUrl}`);
+      cardC.innerHTML = `<div class="card-c-img">
+                    <img src="${e4.tohImg}" alt="">
+                </div>
+                <div class="card-c-inf">
+                    <h4 class="h4 h4-card-a">${e4.tohTitle}</h4>
+                    <span class="span1"><i class="fa-solid fa-location-dot"></i> ${e4.tohLocation}</span>
+                </div>`;
+      otherTripWrapper.appendChild(cardC);
+    });
+  }
+};
+
 const initApp1 = (database) => {
   fetch(database)
     .then((response) => response.json())
@@ -113,6 +154,28 @@ const initApp2 = (database) => {
     });
 };
 initApp2('./json/top-rinjani.json');
+
+const initApp3 = (database) => {
+  fetch(database)
+    .then((response) => response.json())
+    .then((dataName) => {
+      privateProgrames = dataName;
+      console.table(dataName);
+      addPrivateProgrames();
+    });
+};
+initApp3('./json/private.json');
+
+const initApp4 = (database) => {
+  fetch(database)
+    .then((response) => response.json())
+    .then((dataName) => {
+      otherProgrames = dataName;
+      console.table(dataName);
+      addOtherProgrames();
+    });
+};
+initApp4('./json/other-inf.json');
 
 // -------------------------------------
 // Footer
