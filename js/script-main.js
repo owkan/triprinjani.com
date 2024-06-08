@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
   if (scrollTop > lastScrollTop) {
     // Scroll ke atas
     if (scrollTop > header.offsetHeight) {
-      header.style.transform = 'translateY(-90px)';
+      header.style.transform = 'translateY(-85px)';
     } else {
       header.style.transform = 'translateY(0)';
     }
@@ -36,7 +36,17 @@ document.querySelector('.close-user-control').addEventListener('click', () => {
 });
 
 // -------------------------------------
-// Init apps
+// User control
+// -------------------------------------
+const customerService = document.querySelector('#cs');
+const customerServiceContain = document.querySelector('.cs-ol');
+
+customerService.addEventListener('click', () => {
+  customerServiceContain.classList.toggle('cs-ol-active');
+});
+
+// -------------------------------------
+// Auto Load content
 // -------------------------------------
 const offerCardWrapper = document.querySelector('#wrp1');
 const topCardWrapper = document.querySelector('#wrp2');
@@ -47,6 +57,7 @@ let topRinjaniProgrames = [];
 let privateProgrames = [];
 let otherProgrames = [];
 
+// => HTML cards builder
 const addToOfferCard = () => {
   if (offerCardWrapperContain.length > 0) {
     offerCardWrapperContain.forEach((e1) => {
@@ -58,8 +69,9 @@ const addToOfferCard = () => {
   </div>
   <div class="card-a-inf">
       <h4 class="h4 h4-card-a">${e1.titile}</h4>
-      <p class="p2"><i class="fa-solid fa-location-dot"></i> ${e1.location}</p>
+      <p class="p2">${e1.location}</p>
       <ul>                            
+          <li><i class="fa-solid fa-percent"></i> ${e1.discount}</li>
           <li><i class="fa fa-car"></i> ${e1.include1}</li>
           <li><i class="fa fa-home"></i> ${e1.include2}</li>
           <li><i class="fa fa-bowl-food"></i> ${e1.include3}</li>
@@ -133,6 +145,7 @@ const addOtherProgrames = () => {
   }
 };
 
+// => json parse
 const initApp1 = (database) => {
   fetch(database)
     .then((response) => response.json())
@@ -176,6 +189,10 @@ const initApp4 = (database) => {
     });
 };
 initApp4('./json/other-inf.json');
+
+// -------------------------------------
+// Push up info
+// -------------------------------------
 
 // -------------------------------------
 // Footer

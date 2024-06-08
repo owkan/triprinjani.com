@@ -56,6 +56,7 @@
 
   .nav-item,
   .nav-icon {
+    font-size: 0.9em;
     color: var(--bg);
   }
 
@@ -108,7 +109,6 @@
 
   .user i {
     font-size: 0.7em;
-    margin-bottom: 10px;
     margin-right: 2px;
   }
 
@@ -122,17 +122,15 @@
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: var(--primary);
     overflow: hidden;
   }
-  .user .profile img {
-    width: 101%;
-  }
+
   .user .profile i {
-    color: var(--bg);
+    color: var(--primary);
+    font-size: 1em;
   }
 
   .user-controls .close-user-control i {
@@ -173,6 +171,28 @@
   .lang-list li a,
   .curency-list li a {
     color: var(--primary);
+  }
+
+  .cs-ol {
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .cs-ol-active {
+    display: block;
+  }
+
+  #ref-id {
+    width: 90%;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: 2px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  #ref-id i {
+    color: var(--secondary);
   }
 
   /* Heading & Paragraph */
@@ -387,9 +407,9 @@
   /* Card a---------------------------- */
   .card-a {
     display: inline-flex;
-    flex: 0 0 85%;
+    flex: 0 0 95%;
     width: 100%;
-    height: 135px;
+    height: 160px;
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--primary);
@@ -500,7 +520,7 @@
   .card-c {
     display: flex;
     flex-direction: column;
-    flex: 0 0 48.5%;
+    flex: 0 0 48.48%;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -621,15 +641,18 @@
     padding: 10px 2% 10px 2%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
     border-top: solid var(--primary) 1px;
   }
 
   .footer p {
+    width: 33.3%;
     font-size: 0.5em;
   }
 
   .footer ul {
+    width: 33.3%;
     gap: 15px;
     display: flex;
     list-style: none;
@@ -637,5 +660,11 @@
   .footer ul li i {
     font-size: 15px;
     color: #2d2d2d;
+  }
+
+  .footer a {
+    font-size: 0.5em;
+    width: 33.3%;
+    color: var(--primary);
   }
 }
