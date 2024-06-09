@@ -151,7 +151,6 @@ const initApp1 = (database) => {
     .then((response) => response.json())
     .then((dataName) => {
       offerCardWrapperContain = dataName;
-      console.table(dataName);
       addToOfferCard();
     });
 };
@@ -162,7 +161,6 @@ const initApp2 = (database) => {
     .then((response) => response.json())
     .then((dataName) => {
       topRinjaniProgrames = dataName;
-      console.table(dataName);
       addTopProgrames();
     });
 };
@@ -173,7 +171,6 @@ const initApp3 = (database) => {
     .then((response) => response.json())
     .then((dataName) => {
       privateProgrames = dataName;
-      console.table(dataName);
       addPrivateProgrames();
     });
 };
@@ -184,7 +181,6 @@ const initApp4 = (database) => {
     .then((response) => response.json())
     .then((dataName) => {
       otherProgrames = dataName;
-      console.table(dataName);
       addOtherProgrames();
     });
 };

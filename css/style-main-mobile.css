@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 5px 0;
+    user-select: none;
   }
   header .header-col-1 img {
     width: 150px;
@@ -43,7 +44,7 @@
 
   /*  Nav Bar */
   /* ---------------------------------- */
-  nav {
+  /* nav {
     display: block;
     padding: 0 0 10px 0;
   }
@@ -63,7 +64,7 @@
   .nav-item.nav-item-active,
   .nav-icon-active {
     color: var(--secondary);
-  }
+  } */
 
   /* => User control */
   .user-controls {
@@ -76,6 +77,12 @@
     height: 100vh;
     transition: all 0.2s ease-in-out;
     filter: drop-shadow(black 2px 2px 3px);
+  }
+
+  .user-ctr-cnt {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
   }
 
   .user-controls.user-controls-active {
@@ -643,28 +650,30 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    border-top: solid var(--primary) 1px;
+    background: var(--primary);
   }
 
   .footer p {
     width: 33.3%;
     font-size: 0.5em;
+    color: var(--secondary);
   }
 
   .footer ul {
     width: 33.3%;
-    gap: 15px;
     display: flex;
     list-style: none;
+    justify-content: space-around;
+    color: var(--secondary);
   }
   .footer ul li i {
     font-size: 15px;
-    color: #2d2d2d;
   }
 
   .footer a {
     font-size: 0.5em;
+    text-align: end;
     width: 33.3%;
-    color: var(--primary);
+    color: var(--secondary);
   }
 }
