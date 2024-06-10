@@ -290,7 +290,6 @@
 
   .scn.scn-1 {
     height: 120px;
-    background-image: url(https://tokodjbless.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-15-at-12.30.00-1-1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -422,23 +421,22 @@
     background-color: var(--primary);
   }
 
-  .card-a .card-a-inf {
-    width: 50%;
-    padding-left: 10px;
-  }
-
   .card-a .card-a-img {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     border-radius: 8px;
     overflow: hidden;
   }
 
+  .card-a .card-a-inf {
+    width: 60%;
+    padding-left: 10px;
+  }
+
   .card-a .card-a-img img {
-    max-width: 100%;
+    max-height: 100%;
   }
 
   .h4-card-a {
@@ -447,10 +445,10 @@
 
   .card-a .card-a-inf ul {
     margin-left: 10px;
-    list-style: none;
-    font-size: 0.8em;
+    font-size: 0.7em;
     gap: 20px;
     color: white;
+    height: 80px;
   }
 
   .card-a-inf .p2 i {
@@ -465,17 +463,19 @@
     color: var(--secondary);
   }
 
-  .rate span:nth-child(1) {
-    width: 90%;
+  .card-a-inf .rate {
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0 5%;
   }
-
-  .rate span:nth-child(1),
-  .rate span:nth-child(2) {
-    color: var(--green);
+  .card-a-inf .rate span {
+    color: var(--primary);
+    text-align: center;
+    width: 50px;
+    height: 100px;
+    border-radius: 8px 0 0 0;
+    background-color: var(--green);
   }
 
   /* Card b---------------------------- */

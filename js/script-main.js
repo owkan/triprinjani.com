@@ -69,15 +69,15 @@ const addToOfferCard = () => {
   </div>
   <div class="card-a-inf">
       <h4 class="h4 h4-card-a">${e1.titile}</h4>
-      <p class="p2">${e1.location}</p>
+      <p class="p2">${e1.subHead}</p>
       <ul>                            
-          <li><i class="fa-solid fa-percent"></i> ${e1.discount}</li>
-          <li><i class="fa fa-car"></i> ${e1.include1}</li>
-          <li><i class="fa fa-home"></i> ${e1.include2}</li>
-          <li><i class="fa fa-bowl-food"></i> ${e1.include3}</li>
+          <li>${e1.highlight}</li>
+          <li>${e1.highlight1}</li>
+          <li>${e1.highlight2}</li>
+          <li>${e1.highlight3}</li>
       </ul>
       <div class="rate">
-        <span>${e1.stars} ${e1.usd}</span>
+        <span>${e1.usd}</span>
       </div>
   </div>`;
       offerCardWrapper.appendChild(cardA);
