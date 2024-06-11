@@ -96,10 +96,12 @@ const addTopProgrames = () => {
                     </div>
                     <div class="card-b-inf">
                         <h4 class="h4 h4-card-a">${e2.name2}</h4>
-                        <span class="span1"><i class="fa-solid fa-location-dot"></i> ${e2.location2}</span>
+                        <sapn class="span1"><i class="fa-regular fa-clock"></i>${e2.duration2}</sapn>
+                        <sapn class="span1"><i class="fa-solid fa-location-dot"></i>${e2.subhead2}</sapn>
                     </div>
                     <div class="rate">
-                      <span>${e2.stars2} ${e2.usd2}</span>
+                      <span>${e2.type2}</span>
+                      <span>${e2.usd2}</span>
                     </div>`;
       topCardWrapper.appendChild(cardB);
     });
@@ -117,10 +119,12 @@ const addPrivateProgrames = () => {
                     </div>
                     <div class="card-b-inf">
                         <h4 class="h4 h4-card-a">${e3.name3}</h4>
-                        <span class="span1"><i class="fa-solid fa-location-dot"></i> ${e3.location3}</span>
+                        <sapn class="span1"><i class="fa-regular fa-clock"></i>${e3.duration3}</sapn>
+                        <sapn class="span1"><i class="fa-solid fa-location-dot"></i>${e3.subhead3}</sapn>
                     </div>
                     <div class="rate">
-                      <span>${e3.stars3} ${e3.usd3}</span>
+                      <span>${e3.type3}</span>
+                      <span>${e3.usd3}</span>
                     </div>`;
       privateTripWrapper.appendChild(cardB);
     });

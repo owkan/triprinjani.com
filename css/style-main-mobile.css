@@ -189,7 +189,13 @@
     display: block;
   }
 
+  /* hide temporary */
+  #ref {
+    display: none;
+  }
+
   #ref-id {
+    display: none;
     width: 90%;
     text-align: center;
     background-color: var(--primary);
@@ -217,6 +223,10 @@
   }
 
   .h4 {
+    font-weight: 300;
+  }
+
+  .h5 {
     font-weight: 300;
   }
 
@@ -428,6 +438,7 @@
     align-items: center;
     border-radius: 8px;
     overflow: hidden;
+    border-right: solid var(--secondary) 2px;
   }
 
   .card-a .card-a-inf {
@@ -448,7 +459,7 @@
     font-size: 0.7em;
     gap: 20px;
     color: white;
-    height: 80px;
+    height: 82px;
   }
 
   .card-a-inf .p2 i {
@@ -472,8 +483,7 @@
   .card-a-inf .rate span {
     color: var(--primary);
     text-align: center;
-    width: 50px;
-    height: 100px;
+    width: 70px;
     border-radius: 8px 0 0 0;
     background-color: var(--green);
   }
@@ -483,12 +493,12 @@
   .card-b {
     display: flex;
     flex-direction: column;
-    flex: 0 0 38%;
+    flex: 0 0 45%;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--primary);
-    height: 200px;
+    height: 220px;
   }
 
   .card-b-img {
@@ -498,6 +508,7 @@
     align-items: center;
     overflow: hidden;
     border-radius: 8px;
+    border-bottom: solid var(--secondary) 1px;
   }
 
   .card-b-img img {
@@ -507,20 +518,42 @@
   .card-b-inf {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 35%;
     padding: 5px;
-  }
-
-  .card-b-inf .span1 {
-    color: white;
   }
 
   .card-b-inf .h4-card-a {
     margin-bottom: 5px;
   }
 
+  .card-b-inf .span1 {
+    color: var(--bg);
+    margin-bottom: 2px;
+    margin-left: 8px;
+  }
+
   .card-b-inf .span1 i {
     color: var(--secondary);
+    font-size: 1.5;
+    margin-right: 0.8em;
+  }
+
+  .card-b .rate {
+    font-weight: 250;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--green);
+  }
+  .card-b .rate span:nth-child(1) {
+    font-weight: 200;
+    font-size: 0.8em;
+    color: var(--skay);
+  }
+  .card-b .rate span:nth-child(2) {
+    font-weight: 300;
+    font-size: 1.2em;
   }
 
   /* Card c---------------------------- */
@@ -541,6 +574,7 @@
     align-items: center;
     overflow: hidden;
     border-radius: 8px;
+    border-bottom: solid var(--secondary) 1px;
   }
 
   .card-c-img img {
