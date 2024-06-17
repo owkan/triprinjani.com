@@ -51,16 +51,18 @@ customerService.addEventListener('click', () => {
 const offerCardWrapper = document.querySelector('#wrp1');
 const topCardWrapper = document.querySelector('#wrp2');
 const privateTripWrapper = document.querySelector('#wrp3');
-const otherTripWrapper = document.querySelector('#wrp4');
-let offerCardWrapperContain = [];
+const SembalunHillsWrapper = document.querySelector('#wrp4');
+const otherTripWrapper = document.querySelector('#wrp5');
+let offerCardProgrames = [];
 let topRinjaniProgrames = [];
 let privateProgrames = [];
+let sembalunHillsProgrames = [];
 let otherProgrames = [];
 
 // => HTML cards builder
 const addToOfferCard = () => {
-  if (offerCardWrapperContain.length > 0) {
-    offerCardWrapperContain.forEach((e1) => {
+  if (offerCardProgrames.length > 0) {
+    offerCardProgrames.forEach((e1) => {
       let cardA = document.createElement('a');
       cardA.classList.add('card-a');
       cardA.setAttribute('href', `${e1.url}`);
@@ -131,6 +133,29 @@ const addPrivateProgrames = () => {
   }
 };
 
+const addSembalunHillsProgrames = () => {
+  if (sembalunHillsProgrames.length > 0) {
+    sembalunHillsProgrames.forEach((e3) => {
+      let cardB = document.createElement('a');
+      cardB.classList.add('card-b');
+      cardB.setAttribute('href', `${e3.url3}`);
+      cardB.innerHTML = `<div class="card-b-img">
+                        <img src="${e3.img3}" alt="">
+                    </div>
+                    <div class="card-b-inf">
+                        <h4 class="h4 h4-card-a">${e3.name3}</h4>
+                        <sapn class="span1"><i class="fa-regular fa-clock"></i>${e3.duration3}</sapn>
+                        <sapn class="span1"><i class="fa-solid fa-location-dot"></i>${e3.subhead3}</sapn>
+                    </div>
+                    <div class="rate">
+                      <span>${e3.type3}</span>
+                      <span>${e3.usd3}</span>
+                    </div>`;
+      SembalunHillsWrapper.appendChild(cardB);
+    });
+  }
+};
+
 const addOtherProgrames = () => {
   if (otherProgrames.length > 0) {
     otherProgrames.forEach((e4) => {
@@ -154,7 +179,7 @@ const initApp1 = (database) => {
   fetch(database)
     .then((response) => response.json())
     .then((dataName) => {
-      offerCardWrapperContain = dataName;
+      offerCardProgrames = dataName;
       addToOfferCard();
     });
 };
@@ -184,11 +209,22 @@ const initApp4 = (database) => {
   fetch(database)
     .then((response) => response.json())
     .then((dataName) => {
+      sembalunHillsProgrames = dataName;
+      console.table(dataName);
+      addSembalunHillsProgrames();
+    });
+};
+initApp4('./json/sembalun-hills.json');
+
+const initApp5 = (database) => {
+  fetch(database)
+    .then((response) => response.json())
+    .then((dataName) => {
       otherProgrames = dataName;
       addOtherProgrames();
     });
 };
-initApp4('./json/other-inf.json');
+initApp5('./json/other-inf.json');
 
 // -------------------------------------
 // Push up info
