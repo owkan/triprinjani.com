@@ -447,6 +447,7 @@
   }
 
   .card-a .card-a-img img {
+    height: 100%;
     max-height: 100%;
   }
 

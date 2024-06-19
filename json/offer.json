@@ -1,9 +1,9 @@
 [
   {
-    "url": "./pages/offer/Infite-Friends.html",
+    "url": "./en/offer/Infite-Friends.html",
     "img": "./assets/rinjani/sharing-group.jpg",
     "titile": "Rinjani Sharing Group",
-    "subHead": "Create your own group. off 20%",
+    "subHead": "Create your own group",
     "highlight": "3 day 2 night Program",
     "highlight1": "Rinjani summit 3726 masl",
     "highlight2": "Lake",
@@ -13,8 +13,8 @@
     "stars": "★★★★☆"
   },
   {
-    "url": "#",
-    "img": "https://assets.architecturaldigest.in/photos/63287ef4b1c1612420a16876/1:1/w_1080,h_1080,c_limit/mountain%20top-1.jpg",
+    "url": "./en/offer/hiking-and-rafting.html",
+    "img": "./assets/rinjani/hiking-rinjani-rafting.png",
     "titile": "Hiking Rinjani & Rafting",
     "subHead": "Hiking Rinjani + Rafting",
     "highlight": "3 day 2 night hiking rinjani",
@@ -27,7 +27,7 @@
   },
   {
     "url": "#",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDbBiocuQnFGiiULKzQ3ipJsOt1kXrWHWIA&s",
+    "img": "./assets/rinjani/hiking-and-sailing.png",
     "titile": "Hiking And Sailing",
     "subHead": "Hike rinjani + Sailing Flores",
     "highlight": "3 day 2 night hiking rinjani",

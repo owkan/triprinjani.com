@@ -72,7 +72,7 @@ const addToOfferCard = () => {
   <div class="card-a-inf">
       <h4 class="h4 h4-card-a">${e1.titile}</h4>
       <p class="p2">${e1.subHead}</p>
-      <ul>                            
+      <ul>
           <li>${e1.highlight}</li>
           <li>${e1.highlight1}</li>
           <li>${e1.highlight2}</li>
