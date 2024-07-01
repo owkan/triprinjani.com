@@ -523,7 +523,7 @@
     font-size: 0.7em;
     gap: 20px;
     color: white;
-    height: 82px;
+    height: 83px;
   }
 
   .card-a-inf .p2 i {
@@ -547,9 +547,10 @@
   .card-a-inf .rate span {
     color: var(--primary);
     text-align: center;
-    width: 70px;
+    width: auto;
     border-radius: 8px 0 0 0;
     background-color: var(--green);
+    padding: 1px 10px;
   }
 
   .price-tag {
@@ -557,10 +558,11 @@
     position: absolute;
     color: var(--primary);
     text-align: center;
-    width: 70px;
+    width: auto;
     border-radius: 0 15px 15px 0;
     background-color: var(--green);
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Card b---------------------------- */
@@ -752,26 +754,6 @@
 
   /* Gallery & Gallery Item */
   /* ---------------------------------- */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px);
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .gallery-item {
-    overflow: hidden;
-    height: 120px;
-    position: relative;
-    border-radius: 8px;
-  }
-
-  .gallery-item img {
-    height: 100%;
-    width: auto;
-    display: block;
-  }
 
   /* Footer */
   /* ---------------------------------- */

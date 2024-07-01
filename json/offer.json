@@ -8,7 +8,7 @@
     "highlight1": "Rinjani summit 3726 masl",
     "highlight2": "Lake",
     "highlight3": "Hotspring",
-    "usd": "130$",
+    "usd": "$130 / pax",
     "idr": "IDR 3,000,000,00",
     "stars": "★★★★☆"
   },
@@ -21,12 +21,12 @@
     "highlight1": "2h River Rafting",
     "highlight2": "-",
     "highlight3": "-",
-    "usd": "20$",
+    "usd": "$17.56 / pax",
     "idr": "IDR 20",
     "stars": "★★★★☆"
   },
   {
-    "url": "#",
+    "url": "./en/offer/hiking-and-sailing.html",
     "img": "./assets/rinjani/hiking-and-sailing.png",
     "titile": "Hiking And Sailing",
     "subHead": "Hike rinjani + Sailing Flores",
@@ -34,7 +34,7 @@
     "highlight1": "4 day 3 night sailing Comodo",
     "highlight2": "-",
     "highlight3": "-",
-    "usd": "$20",
+    "usd": "$20 / pax",
     "idr": "IDR 20",
     "stars": "★★★★☆"
   }
