@@ -755,6 +755,42 @@
   /* Gallery & Gallery Item */
   /* ---------------------------------- */
 
+  /* Others block */
+  /* ---------------------------------- */
+  .others {
+    margin: 20px 0;
+    display: block;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .others .h3.h4-sub {
+    color: var(--bg);
+  }
+
+  .cnt-oth {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: var(--nd-primary);
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .oth-link {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--bg);
+    text-decoration: underline;
+  }
+
+  .oth-link:hover {
+    color: var(--secondary);
+  }
+
   /* Footer */
   /* ---------------------------------- */
   .footer {
