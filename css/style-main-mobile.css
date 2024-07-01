@@ -217,13 +217,29 @@
     margin-bottom: 10px;
   }
 
+  .h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+
   .h3 {
     margin-bottom: 10px;
     color: var(--primary);
   }
 
+  .h3-sub {
+    margin-top: 20px;
+    color: var(--primary);
+  }
+
   .h4 {
     font-weight: 300;
+  }
+
+  .h4-sub {
+    margin-top: 10px;
+    color: var(--primary);
   }
 
   .h5 {
@@ -246,7 +262,27 @@
     font-size: 0.8em;
   }
 
+  /* Ul/Ol and List */
+  /* ---------------------------------- */
+  /* => Ul & Ol */
+  .ul1 {
+    font-size: 0.8em;
+    margin-left: 20px;
+  }
+
+  .ol1 {
+    font-size: 0.8em;
+    margin-left: 20px;
+    counter-reset: list-counter;
+  }
+
+  /* => List */
+  .ol .li1::marker {
+    font-weight: 400;
+  }
+
   /* Button*/
+  /* ---------------------------------- */
   #left-nav,
   #right-nav {
     width: 25px;
@@ -289,6 +325,22 @@
     color: var(--primary);
     background-color: var(--trn-primary);
     border-radius: 25px;
+  }
+
+  .joint {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 2px 15px;
+    border-radius: 8px;
+    border: solid var(--bg) 1px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.298) 5px 5px 5px);
+  }
+
+  .joint:hover {
+    color: var(--primary);
+    background: var(--secondary);
+    transition: all 0.1s;
+    border: solid var(--primary) 1px;
   }
 
   /* Section */
@@ -417,6 +469,17 @@
     gap: 10px;
   }
 
+  /* Hero Button Container */
+  .cnt-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    border-top: solid var(--bg) 1px;
+    padding-top: 18px;
+    gap: 8px;
+  }
+
   /* Cards */
   /* ---------------------------------- */
   /* => Card */
@@ -487,6 +550,17 @@
     width: 70px;
     border-radius: 8px 0 0 0;
     background-color: var(--green);
+  }
+
+  .price-tag {
+    left: 0;
+    position: absolute;
+    color: var(--primary);
+    text-align: center;
+    width: 70px;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--green);
+    padding-left: 10px;
   }
 
   /* Card b---------------------------- */
@@ -674,6 +748,29 @@
   .list-cart-active {
     display: block;
     right: 0%;
+  }
+
+  /* Gallery & Gallery Item */
+  /* ---------------------------------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    height: 120px;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .gallery-item img {
+    height: 100%;
+    width: auto;
+    display: block;
   }
 
   /* Footer */

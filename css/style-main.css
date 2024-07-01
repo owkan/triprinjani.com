@@ -409,9 +409,9 @@ header .header-col-1 img {
   gap: 5px;
 }
 
-.container-a::-webkit-scrollbar {
-  /* display: none; */
-}
+/* .container-a::-webkit-scrollbar {
+  display: none;
+} */
 
 /* Container b---------------------------- */
 .container-b {

@@ -2,7 +2,7 @@
   {
     "url2": "#",
     "img2": "./assets/rinjani/Rinjani-peak-and-lake.webp",
-    "name2": "Rinjani Peak & Lake",
+    "name2": "Rinjani Summit & Lake",
     "subhead2": "Semabalun",
     "duration2": "3 day 2 night",
     "type2": "Sharing type",
@@ -13,6 +13,7 @@
   {
     "url2": "#",
     "img2": "./assets/rinjani/Rinjani-peak.jpeg",
+    "name2": "Rinjani Summit",
     "subhead2": "Sembalun",
     "duration2": "2 day 1 night",
     "type2": "Sharing type",
@@ -23,7 +24,7 @@
   {
     "url2": "#",
     "img2": "./assets/rinjani/Senaru-crater-rim.jpeg",
-    "name2": "Crater rim",
+    "name2": "Senaru Crater rim",
     "subhead2": "Senaru",
     "duration2": "2 day 1 night",
     "type2": "Private type",
