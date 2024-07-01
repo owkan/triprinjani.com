@@ -1,6 +1,10 @@
 @media (max-width: 600px) {
   /* Header */
   /* ---------------------------------- */
+  body {
+    user-select: none;
+  }
+
   header {
     position: fixed;
     top: 0;
