@@ -221,6 +221,10 @@
     margin-bottom: 10px;
   }
 
+  .h1.h1-sub {
+    text-shadow: rgba(0, 0, 0, 0.586) 1px 1px 4px;
+  }
+
   .h2 {
     font-size: 1.1em;
     margin-bottom: 10px;
@@ -283,6 +287,25 @@
   /* => List */
   .ol .li1::marker {
     font-weight: 400;
+  }
+
+  .ul2 {
+    display: flex;
+    gap: 20px;
+
+    font-size: 0.8em;
+    margin-left: 20px;
+  }
+  .ul2 {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+  }
+
+  .ul2 li.li1 i {
+    color: var(--primary);
   }
 
   /* Button*/
@@ -415,7 +438,7 @@
     right: 0;
   }
 
-  /* Container, wrapper & carousel*/
+  /* Container, wrapper, carousel, & Block*/
   /* ---------------------------------- */
   /* => Containner */
   /* Container a---------------------------- */
@@ -473,7 +496,12 @@
     gap: 10px;
   }
 
-  /* Hero Button Container */
+  .container-d {
+    border-bottom: solid var(--primary) 2px;
+    padding-bottom: 20px;
+  }
+
+  /* => Hero Button Container */
   .cnt-btn {
     display: flex;
     justify-content: flex-end;
@@ -482,6 +510,20 @@
     border-top: solid var(--bg) 1px;
     padding-top: 18px;
     gap: 8px;
+  }
+
+  /* => Block */
+  /* Block A---------------------------- */
+  .block-a {
+    border: solid var(--primary) 1px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .block-a h3.h3.h3-sub {
+    text-decoration: underline;
+    margin-top: 0;
   }
 
   /* Cards */
@@ -777,11 +819,13 @@
 
   .cnt-oth {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 5px;
     background: var(--nd-primary);
     width: 100%;
     border-radius: 8px;
+    padding: 0 5px;
   }
 
   .oth-link {
@@ -789,6 +833,10 @@
     font-size: 0.8em;
     color: var(--bg);
     text-decoration: underline;
+  }
+  .oth-link i {
+    font-size: 0.7em;
+    color: var(--secondary);
   }
 
   .oth-link:hover {
