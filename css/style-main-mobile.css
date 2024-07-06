@@ -284,18 +284,6 @@
     counter-reset: list-counter;
   }
 
-  /* => List */
-  .ol .li1::marker {
-    font-weight: 400;
-  }
-
-  .ul2 {
-    display: flex;
-    gap: 20px;
-
-    font-size: 0.8em;
-    margin-left: 20px;
-  }
   .ul2 {
     display: flex;
     list-style: none;
@@ -304,8 +292,28 @@
     flex-wrap: wrap;
   }
 
+  .ul3 {
+    font-size: 0.8em;
+    margin-left: 10px;
+    list-style: none;
+  }
+
+  /* => List */
+  .ol .li1::marker {
+    font-weight: 400;
+  }
+
   .ul2 li.li1 i {
     color: var(--primary);
+  }
+
+  .ul3 .li3 i {
+    color: var(--dark-green);
+    margin-right: 5px;
+  }
+  .ul3 .li4 i {
+    color: var(--danger);
+    margin-right: 5px;
   }
 
   /* Button*/
@@ -823,7 +831,7 @@
     /* justify-content: center; */
     gap: 5px;
     background: var(--nd-primary);
-    width: 100%;
+    width: 97.7%;
     border-radius: 8px;
     padding: 0 5px;
   }
