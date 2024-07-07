@@ -5,7 +5,7 @@
     "name2": "Rinjani Join Group",
     "subhead2": "Semabalun",
     "duration2": "3 day 2 night",
-    "type2": "Sharing type",
+    "type2": "Sharing trip",
     "usd2": "140$ / pax",
     "idr2": "IDR 15",
     "stars2": "★★★★☆"
@@ -16,8 +16,8 @@
     "name2": "Rinjani Summit",
     "subhead2": "Sembalun",
     "duration2": "2 day 1 night",
-    "type2": "Sharing type",
-    "usd2": "122$ / pax",
+    "type2": "Sharing trip",
+    "usd2": "125$ / pax",
     "idr2": "IDR 15",
     "stars2": "★★★★☆"
   },
@@ -27,8 +27,8 @@
     "name2": "Senaru Crater rim",
     "subhead2": "Senaru",
     "duration2": "2 day 1 night",
-    "type2": "Private type",
-    "usd2": "150$ / pax",
+    "type2": "Private trip",
+    "usd2": "155$ / pax",
     "idr2": "IDR 15",
     "stars2": "★★★★☆"
   },
@@ -38,8 +38,8 @@
     "name2": "Rinjani 2nd Summit",
     "subhead2": "Aik berik",
     "duration2": "2 day 1 night",
-    "type2": "Private type",
-    "usd2": "150$ / pax",
+    "type2": "Private trip",
+    "usd2": "155$ / pax",
     "idr2": "IDR 15",
     "stars2": "★★★★☆"
   },
@@ -49,8 +49,8 @@
     "name2": "Rinjani Sangkareang",
     "subhead2": "Tete batu",
     "duration2": "2 day 1 night",
-    "type2": "Sharing type",
-    "usd2": "150$ / pax",
+    "type2": "Sharing trip",
+    "usd2": "155$ / pax",
     "idr2": "IDR 15",
     "stars2": "★★★★☆"
   }

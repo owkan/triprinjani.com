@@ -311,6 +311,10 @@
     color: var(--dark-green);
     margin-right: 5px;
   }
+
+  .ul3 .li3a i {
+    margin-right: 5px;
+  }
   .ul3 .li4 i {
     color: var(--danger);
     margin-right: 5px;
