@@ -20,27 +20,5 @@
     "usd3": "15$ / pax",
     "idr3": "IDR 15",
     "stars3": "★★★★☆"
-  },
-  {
-    "url3": "./en/sembalun-hiking-hils/nanggi-hill.html",
-    "img3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRma_sDU-KdVZAa1zWpSuVNifyPlnxwBICtPQ&s",
-    "name3": "Nanggi hill",
-    "subhead3": "Sembalun",
-    "duration3": "2h hike",
-    "type3": "Sharing trip",
-    "usd3": "15$ / pax",
-    "idr3": "IDR 15",
-    "stars3": "★★★★☆"
-  },
-  {
-    "url3": "./en/sembalun-hiking-hils/sempana-hills.html",
-    "img3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWylMO-_0br8ww32w3f8xmgVKLM3VzPgzB7w&s",
-    "name3": "Sempana hills",
-    "subhead3": "Sembalun",
-    "duration3": "2h hike",
-    "type3": "Sharing trip",
-    "usd3": "15$ / pax",
-    "idr3": "IDR 15",
-    "stars3": "★★★★☆"
   }
 ]
