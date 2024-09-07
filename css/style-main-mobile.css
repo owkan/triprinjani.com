@@ -280,10 +280,20 @@
     margin-bottom: 10px;
     font-size: 0.8em;
   }
+  
+  .p3 {
+    font-size: 0.8em;
+  }
 
   .span1 {
     margin-bottom: 20px;
     font-size: 0.8em;
+  }
+
+  .span2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    border-bottom: solid var(--primary) 1px;
   }
 
   /* Ul/Ol and List */
@@ -785,6 +795,55 @@
     color: var(--bg);
     font-weight: 250;
   }
+
+  /* Card Autor ---------------------------- */
+  .author-box {
+    display: flex;
+    background-color: var(--trn-primary);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.404) 2px 2px 2px);
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.404) 2px 2px 2px);
+}
+  .author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    /* border: solid var(--primary) 2px; */
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.author-pick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 5em;
+  overflow: hidden;
+  border: solid var(--primary) 2px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.author-pick img {
+  width: 100%;
+}
 
   /* Cart list */
   /* ---------------------------------- */

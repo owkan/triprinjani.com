@@ -30,7 +30,7 @@ document.querySelector('#ellipsis-btn').addEventListener('click', () => {
   userControl.classList.add('user-controls-active');
 });
 
-// jika tombol X (di pojok kanan atas user control) maka, sembunyikan user control
+// jika tombol X (di pojok kanan atas user control) maka, sembunyikan user controltu
 document.querySelector('.close-user-control').addEventListener('click', () => {
   userControl.classList.remove('user-controls-active');
 });
